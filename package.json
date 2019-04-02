@@ -1,0 +1,79 @@
+{
+  "name": "pinyin-util",
+  "version": "1.0.0",
+  "description": "pinyin",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
+    "build:lib": "babel src --out-dir lib",
+    "build:umd": "webpack --config webpack.config.development.js",
+    "build:umd:min": "webpack --config webpack.config.production.js",
+    "prebuild": "npm run clean",
+    "prepare": "npm run build",
+    "lint": "eslint --ext .js src",
+    "lint:fix": "eslint --fix --ext .js src",
+    "clean": "rimraf lib dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xwjune/pinyin.git"
+  },
+  "keywords": [
+    "pinyin",
+    "拼音"
+  ],
+  "author": "小巷 <xwjune@163.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xwjune/pinyin/issues"
+  },
+  "homepage": "https://github.com/xwjune/pinyin#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-do-expressions": "^7.0.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/runtime-corejs2": "^7.4.2",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.1.3",
+    "lint-staged": "^7.3.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "index.js"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": "eslint"
+  }
+}
