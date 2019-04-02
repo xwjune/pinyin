@@ -1,7 +1,7 @@
 {
   "name": "pinyin-util",
   "version": "1.0.2",
-  "description": "pinyin",
+  "description": "Convert Chinese to Pinyin",
   "main": "index.js",
   "scripts": {
     "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
