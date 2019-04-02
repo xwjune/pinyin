@@ -1,7 +1,7 @@
 {
   "name": "pinyin-util",
-  "version": "1.0.2",
-  "description": "Convert Chinese to Pinyin",
+  "version": "1.0.0",
+  "description": "convert chinese to pinyin",
   "main": "index.js",
   "scripts": {
     "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
@@ -30,7 +30,20 @@
     "url": "https://github.com/xwjune/pinyin/issues"
   },
   "homepage": "https://github.com/xwjune/pinyin#readme",
-  "devDependencies": {
+  "files": [
+    "dist",
+    "lib",
+    "index.js"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": "eslint"
+  },
+  "dependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
@@ -50,7 +63,9 @@
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/plugin-transform-runtime": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "@babel/runtime-corejs2": "^7.4.2",
+    "@babel/runtime-corejs2": "^7.4.2"
+  },
+  "devDependencies": {
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "eslint": "^5.7.0",
@@ -64,18 +79,5 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-merge": "^4.2.1"
-  },
-  "files": [
-    "dist",
-    "lib",
-    "index.js"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.js": "eslint"
   }
 }

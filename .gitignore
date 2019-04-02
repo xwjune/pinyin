@@ -14,7 +14,3 @@
 .DS_Store
 /.vscode
 /.idea
-
-# umi
-.umi
-.umi-production
