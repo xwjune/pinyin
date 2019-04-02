@@ -1,6 +1,6 @@
 {
   "name": "pinyin-util",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "pinyin",
   "main": "index.js",
   "scripts": {
