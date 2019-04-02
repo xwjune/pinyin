@@ -20,7 +20,9 @@
   },
   "keywords": [
     "pinyin",
-    "拼音"
+    "拼音",
+    "汉字",
+    "中文"
   ],
   "author": "小巷 <xwjune@163.com>",
   "license": "ISC",

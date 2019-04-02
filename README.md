@@ -1,10 +1,8 @@
 > pinyin-util
 
-[git地址](https://github.com/xwjune/pinyin.git)
-
 ## Introduction
 
-汉字与拼音互转
+汉字拼音转换工具
 
 字符范围：Unicode字符中`4E00(19968)-9FA5(40869)`共计`20902`
 
