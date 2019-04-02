@@ -2,20 +2,55 @@
 
 [git地址](https://github.com/xwjune/pinyin.git)
 
-## 使用
+## Introduction
 
-```bash
-## Install globally or locally
-$ npm i pinyin-util -S
-```
-
-## 汉字与拼音互转
+汉字与拼音互转
 
 字符范围：Unicode字符中`4E00(19968)-9FA5(40869)`共计`20902`
 
+## Installation
+
+Install with npm:
+
+```bash
+npm install --save-dev pinyin-util
+```
+
+Install with yarn:
+
+```bash
+yarn add pinyin-util --dev
+```
+
+## Usage
+
+ES6 module:
+
 ```js
 import pinyinUtil from 'pinyin-util';
+
+pinyinUtil.getPinyin('小明'); // xiaoming
 ```
+
+script:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>pinyin</title>
+  <script src="pinyin.min.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+    pinyinUtil.getPinyin('小明'); // xiaoming
+  </script>
+</body>
+</html>
+```
+
+## API
 
 ### getPinyin(chinese, [splitter=''], [withtone=false])
 根据汉字获取拼音
