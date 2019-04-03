@@ -37,8 +37,8 @@ script:
 <html>
 <head>
   <meta charset="utf-8">
-  <title>pinyin</title>
-  <script src="pinyin.min.js"></script>
+  <title>pinyin-util</title>
+  <script src="pinyin-util.min.js"></script>
 </head>
 <body>
   <script type="text/javascript">
