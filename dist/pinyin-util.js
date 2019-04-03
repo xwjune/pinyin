@@ -1,4 +1,4 @@
-/*! v1.0.0 | Copyright © 小巷 <xwjune@163.com> | All rights reserved. */
+/*! v1.1.0 | Copyright © 小巷 <xwjune@163.com> | All rights reserved. */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
