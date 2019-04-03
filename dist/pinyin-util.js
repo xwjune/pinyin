@@ -1,4 +1,4 @@
-/*! v1.1.0 | Copyright © 小巷 <xwjune@163.com> | All rights reserved. */
+/*! v1.1.1 | Copyright © 小巷 <xwjune@163.com> | All rights reserved. */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -92,21 +92,10 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./dist.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./dist.js":
-/*!*****************!*\
-  !*** ./dist.js ***!
-  \*****************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__(/*! ./src */ \"./src/index.js\")[\"default\"];\n\n//# sourceURL=webpack://pinyinUtil/./dist.js?");
-
-/***/ }),
 
 /***/ "./node_modules/_@babel_runtime-corejs2@7.4.3@@babel/runtime-corejs2/core-js/object/assign.js":
 /*!****************************************************************************************************!*\
@@ -607,5 +596,5 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bab
 
 /***/ })
 
-/******/ });
+/******/ })["default"];
 });

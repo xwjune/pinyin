@@ -3,11 +3,12 @@ const webpack = require('webpack');
 const package = require('./package.json');
 
 module.exports = {
-  entry: './dist.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     library: 'pinyinUtil',
     libraryTarget: 'umd',
+    libraryExport: 'default',
   },
   resolve: {
     extensions: ['.js'],
