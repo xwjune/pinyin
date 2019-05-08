@@ -131,7 +131,7 @@ function getPinyin(chinese, splitter = '', withtone = false) {
  * @example
  *
  * getHanzi('diu');
- * // => 丟丢銩铥颩
+ * // => 丟丢銩铥
  */
 function getHanzi(pinyin) {
   return dictPy2hz[removeTone(pinyin)] || '';

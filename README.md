@@ -30,7 +30,7 @@ import pinyinUtil from 'pinyin-util';
 pinyinUtil.getPinyin('小明'); // xiaoming
 ```
 
-script:
+Script:
 
 ```html
 <!DOCTYPE html>
@@ -74,5 +74,5 @@ getCityPinyin('西藏', ' ', true); // xī zhàng
 单个拼音转汉字
 
 ```js
-getHanzi('diu'); // 丟丢銩铥颩
+getHanzi('diu'); // 丟丢銩铥
 ```
