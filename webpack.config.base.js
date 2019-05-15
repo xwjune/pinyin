@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const babelConfig = require('./.babelrc');
 const packageConfig = require('./package.json');
 
 module.exports = {
@@ -17,7 +18,20 @@ module.exports = {
     rules: [{
       test: /\.js$/,
       exclude: /node_modules/,
-      use: ['babel-loader'],
+      use: {
+        loader: 'babel-loader',
+        options: {
+          plugins: [
+            [
+              '@babel/plugin-transform-runtime',
+              {
+                corejs: 2
+              }
+            ],
+            ...babelConfig.plugins,
+          ]
+        }
+      },
     }],
   },
   plugins: [

@@ -4,6 +4,9 @@ const { getPinyin } = pinyinUtil;
 
 describe('根据汉字获取拼音', () => {
   test('小明 => xiao ming', () => {
+    expect(getPinyin('小明')).toBe('xiaoming');
+  });
+  test('小明 => xiao ming', () => {
     expect(getPinyin('小明', ' ')).toBe('xiao ming');
   });
   test('小明 => xiǎo míng', () => {

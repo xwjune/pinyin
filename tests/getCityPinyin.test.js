@@ -12,4 +12,7 @@ describe('获取城市拼音【城市多音字已处理】', () => {
   test('西藏 => xī zhàng', () => {
     expect(getCityPinyin('西藏', ' ', true)).toBe('xī zhàng');
   });
+  test('广岛 => guǎng dǎo', () => {
+    expect(getCityPinyin('广岛', ' ', true)).toBe('guǎng dǎo');
+  });
 });
