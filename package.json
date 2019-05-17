@@ -1,10 +1,10 @@
 {
   "name": "pinyin-util",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "convert chinese to pinyin",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:lib && npm run build:umd && npm run build:umd:min",
+    "build": "./scripts/build.sh",
     "build:lib": "babel src --out-dir lib",
     "build:umd": "webpack --config webpack.config.development.js",
     "build:umd:min": "webpack --config webpack.config.production.js",
@@ -33,8 +33,8 @@
   },
   "homepage": "https://github.com/xwjune/pinyin#readme",
   "files": [
-    "dist",
     "lib",
+    "dist",
     "index.js"
   ],
   "husky": {
