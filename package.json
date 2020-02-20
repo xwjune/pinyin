@@ -1,6 +1,6 @@
 {
   "name": "pinyin-util",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "convert chinese to pinyin",
   "main": "index.js",
   "scripts": {
